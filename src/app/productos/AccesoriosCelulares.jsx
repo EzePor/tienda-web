@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Relojes = ({id,imagen, nombre, descripcion, precio, handleAgregar,handleQuitar}) => {
+const AccesoriosCelulares = ({id,imagen, nombre, descripcion, precio, handleAgregar,handleQuitar}) => {
 
     const [agregado, setAgregado] = useState( false )
 
@@ -27,16 +27,18 @@ const Relojes = ({id,imagen, nombre, descripcion, precio, handleAgregar,handleQu
             alt={nombre}
           />
         </div>
-                <div className="p-2 space-y-2">
+
+             <div className="p-2 space-y-2">
                 <h2 className="text-xl font-bold">{nombre}</h2>
                 <h3 className="">{descripcion}</h3>
-                <h4 className="text-2xl  font-semibold">$ {precio}</h4>
+                <h4 className="text-2xl font-semibold">$ {precio}</h4>
                 </div>
-                  <div className="absolute bottom-4 left-0 right-0 flex justify-center my-2">
+                
+                  <div className="absolute bottom-4 left-0 right-0 flex justify-center mb-2">
                 {agregado ?
             <button type="button" className=" bg-red-500 text-slate-200 p-2 rounded-md   " onClick={ clickQuitar}> Quitar del carrito</button>
             :
-            <button type="button" className="bg-orange-500 text-slate-200 p-2 rounded-md hover:transition-transform transform hover:scale-125 hover:bg-lime-700  " onClick={clickAgregar}>Agregar al carrito</button>
+            <button type="button" className="bg-orange-500 text-slate-200 p-2 rounded-md hover:transition-transform transform hover:scale-125 hover:bg-lime-700 " onClick={clickAgregar}>Agregar al carrito</button>
             }
                   </div>
             
@@ -56,6 +58,6 @@ const Relojes = ({id,imagen, nombre, descripcion, precio, handleAgregar,handleQu
     )
   }
   
-  export default Relojes
+  export default AccesoriosCelulares
   
 

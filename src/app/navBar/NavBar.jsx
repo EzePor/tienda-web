@@ -66,7 +66,7 @@ const NavBar = () => {
               </li>
               <li className="text-lg font-semibold text-white  ">
                 <Link
-                  href="/"
+                  href="/compraAccesoriosCelulares"
                   className="  hover:text-orange-400 focus:text-orange-400  focus:outline-none focus:border-orange-500 border-b-2 border-transparent "
                 >
                   Accesorios Celulares
@@ -74,7 +74,7 @@ const NavBar = () => {
               </li>
               <li className="text-lg font-semibold text-white  ">
                 <Link
-                  href="/"
+                  href="/compraFotografia"
                   className=" hover:text-orange-400 focus:text-orange-400  focus:outline-none focus:border-orange-500 border-b-2 border-transparent "
                 >
                   Fotografía
@@ -109,7 +109,7 @@ const NavBar = () => {
 
       {/* menu celulares- barra deplegable con Link */}
       {!isClick && (
-        <div className="  lg:hidden  z-50  fixed top-0 right-0 transition-all duration-1000 ease-in-out">
+        <div className="  md:hidden  z-50  fixed top-0 right-0 transition-all duration-1000 ease-in-out">
           <nav className=" px-2 ">
             <ul className="  space-y-1 mt-[60px] ml-[-470px] ">
               <li className=" border-b-2 font-medium p-1  bg-orange-200 w-48">
@@ -130,7 +130,7 @@ const NavBar = () => {
               </li>
               <li className=" border-b-2 font-medium p-1  bg-orange-200 w-48">
                 <Link
-                  href="/"
+                  href="/compraAccesoriosCelulares"
                   className="hover:text-orange-600 focus:outline-none focus:text-orange-600"
                 >
                   Accesorios Celulares
@@ -138,7 +138,7 @@ const NavBar = () => {
               </li>
               <li className=" border-b-2 font-medium p-1  bg-orange-200 w-48">
                 <Link
-                  href="/"
+                  href="/compraFotografia"
                   className="hover:text-orange-600 focus:outline-none focus:text-orange-600"
                 >
                   Fotografía

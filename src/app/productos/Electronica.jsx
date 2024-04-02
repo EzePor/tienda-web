@@ -27,14 +27,18 @@
               alt={nombre}
             />
           </div>
+
+                    <div className="p-2 space-y-2">
                   <h2 className="text-xl font-bold">{nombre}</h2>
                   <h3 className="">{descripcion}</h3>
                   <h4 className="text-2xl font-semibold">$ {precio}</h4>
+                  </div>
+                  
                     <div className="absolute bottom-4 left-0 right-0 flex justify-center mb-2">
                   {agregado ?
               <button type="button" className=" bg-red-500 text-slate-200 p-2 rounded-md   " onClick={ clickQuitar}> Quitar del carrito</button>
               :
-              <button type="button" className="bg-orange-500 text-slate-200 p-2 rounded-md  " onClick={clickAgregar}>Agregar al carrito</button>
+              <button type="button" className="bg-orange-500 text-slate-200 p-2 rounded-md hover:transition-transform transform hover:scale-125 hover:bg-lime-700  " onClick={clickAgregar}>Agregar al carrito</button>
               }
                     </div>
               
